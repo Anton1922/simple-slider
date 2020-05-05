@@ -1,0 +1,87 @@
+.slider {
+	margin: 50px auto;
+	padding: 25px;
+	max-width: 550px;
+	border: 2px solid #000;
+	font-family: 'Roboto', san-serif;
+
+	&__container-image {
+		position: relative;
+
+		&--disabled {
+			display: none;
+		}
+	}
+
+	&__question, &__text {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		line-height: 1.3;
+		font-size: 20px;
+		font-weight: 500;
+	}
+
+	&__question {
+		top: 3%;
+	}
+
+	&__text {
+		bottom: 3%;
+	}
+
+	&__control-panel {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 25px;
+		padding: 0 15px;
+	}
+
+	&__button-play {
+		padding: 5px 5px 0 0;
+		border: 2px solid #000;
+		cursor: pointer;
+	}
+	&__button-play svg {
+		fill: #fff;
+		stroke: #000;
+		stroke-width: 2px;
+	}
+
+	&__button-play:hover svg {
+		stroke: green;
+	}
+
+	&__numbering {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 0 10px;
+		width: 50%;
+		border: 2px solid #000;
+
+	}
+
+	&__container-number {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		//padding: 5px;
+		width: 30px;
+		height: 30px;
+		//border: 2px solid #000;
+		font-size: 20px;
+		cursor: pointer;
+
+		&--checked {
+			border: 1px solid green;
+			color: green;
+		}
+	}
+
+	&__container-number:hover &__number {
+
+		color: green;
+	}
+}
