@@ -7,6 +7,7 @@
 
 	&__container-image {
 		position: relative;
+		height: 372px;
 
 		&--disabled {
 			display: none;
@@ -39,18 +40,20 @@
 	}
 
 	&__button-play {
-		padding: 5px 5px 0 0;
-		border: 2px solid #000;
+		padding: 5px 5px 5px 5px;
+		border: 2px solid $green;
+		//background-color: 
 		cursor: pointer;
 	}
 	&__button-play svg {
-		fill: #fff;
-		stroke: #000;
-		stroke-width: 2px;
+		fill: $green;
+		stroke: $green;
+		stroke-width: 1px;
 	}
 
 	&__button-play:hover svg {
-		stroke: green;
+		fill: $green-hover;
+		stroke: $green-hover;
 	}
 
 	&__numbering {
@@ -59,8 +62,8 @@
 		align-items: center;
 		padding: 0 10px;
 		width: 50%;
-		border: 2px solid #000;
-
+		border: 2px solid $green;
+		color: $green;
 	}
 
 	&__container-number {
@@ -75,13 +78,20 @@
 		cursor: pointer;
 
 		&--checked {
-			border: 1px solid green;
-			color: green;
+			border: 1px solid $green;
+			color: $green;
 		}
 	}
 
 	&__container-number:hover &__number {
 
-		color: green;
+		//color: green;
+	}
+
+	&__number {
+
+		&:hover {
+			color: $green-hover;
+		}
 	}
 }
