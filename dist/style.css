@@ -71,7 +71,8 @@ input[type=number] {
   border: 2px solid #000;
   font-family: 'Roboto', san-serif; }
   .slider__container-image {
-    position: relative; }
+    position: relative;
+    height: 372px; }
     .slider__container-image--disabled {
       display: none; }
   .slider__question, .slider__text {
@@ -96,15 +97,16 @@ input[type=number] {
     margin-top: 25px;
     padding: 0 15px; }
   .slider__button-play {
-    padding: 5px 5px 0 0;
-    border: 2px solid #000;
+    padding: 5px 5px 5px 5px;
+    border: 2px solid #41e7c9;
     cursor: pointer; }
   .slider__button-play svg {
-    fill: #fff;
-    stroke: #000;
-    stroke-width: 2px; }
+    fill: #41e7c9;
+    stroke: #41e7c9;
+    stroke-width: 1px; }
   .slider__button-play:hover svg {
-    stroke: green; }
+    fill: #1bd2b1;
+    stroke: #1bd2b1; }
   .slider__numbering {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -116,7 +118,8 @@ input[type=number] {
     align-items: center;
     padding: 0 10px;
     width: 50%;
-    border: 2px solid #000; }
+    border: 2px solid #41e7c9;
+    color: #41e7c9; }
   .slider__container-number {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -132,7 +135,7 @@ input[type=number] {
     font-size: 20px;
     cursor: pointer; }
     .slider__container-number--checked {
-      border: 1px solid green;
-      color: green; }
-  .slider__container-number:hover .slider__number {
-    color: green; }
+      border: 1px solid #41e7c9;
+      color: #41e7c9; }
+  .slider__number:hover {
+    color: #1bd2b1; }
