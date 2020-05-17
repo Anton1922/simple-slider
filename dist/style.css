@@ -70,9 +70,17 @@ input[type=number] {
   max-width: 550px;
   border: 2px solid #000;
   font-family: 'Roboto', san-serif; }
+  .slider__spacer {
+    opacity: 0; }
+  .slider__display {
+    position: relative; }
   .slider__container-image {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 372px; }
+    .slider__container-image--active {
+      z-index: 100; }
     .slider__container-image--disabled {
       display: none; }
   .slider__question, .slider__text {
