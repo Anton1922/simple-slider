@@ -5,9 +5,23 @@
 	border: 2px solid #000;
 	font-family: 'Roboto', san-serif;
 
-	&__container-image {
+	&__spacer {
+		opacity: 0;
+	}
+
+	&__display {
 		position: relative;
+	}
+
+	&__container-image {
+		position: absolute;
+		top: 0;
+		left: 0;
 		height: 372px;
+
+		&--active {
+			z-index: 100;
+		}
 
 		&--disabled {
 			display: none;
