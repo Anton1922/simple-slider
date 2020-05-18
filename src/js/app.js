@@ -18,7 +18,7 @@ numbers.addEventListener('click', function(event) {
 	if (target.classList.contains('slider__container-number') || target.classList.contains('slider__number')) {
 		numbers.querySelector('.slider__container-number--checked').classList.remove('slider__container-number--checked');
 
-		if (target.tagName == 'SPAN') {
+		if (target.classList.contains('slider__number')) {
 				target.closest('.slider__container-number').classList.add('slider__container-number--checked');
 			} else {
 				target.classList.add('slider__container-number--checked');
