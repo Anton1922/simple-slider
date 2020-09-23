@@ -62,18 +62,18 @@
 		}
 	}
 
-	&__button-play {
+	&__button {
 		padding: 5px 5px 5px 5px;
 		border: 2px solid $green;
 		cursor: pointer;
 	}
-	&__button-play svg {
+	&__button svg {
 		fill: $green;
 		stroke: $green;
 		stroke-width: 1px;
 	}
 
-	&__button-play:hover svg {
+	&__button:hover svg {
 		fill: $green-hover;
 		stroke: $green-hover;
 
@@ -110,16 +110,13 @@
 		//font-weight: 500;
 		cursor: pointer;
 
+		&:hover {
+			color: $green-hover;
+		}
+
 		&--checked {
 			border: 2px solid $green;
 			color: $green;
-		}
-	}
-
-	&__number {
-
-		&:hover {
-			color: $green-hover;
 		}
 	}
 }
